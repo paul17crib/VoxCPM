@@ -50,6 +50,12 @@ _EXAMPLES_FOOTER_EN = (
     "lazy drawl, very casual and chill.\"*  \n"
     "`Target Text`: *\"Dude, did you see that set? The waves out there are totally gnarly today. "
     "Just catching barrels all morning — it's like, totally righteous, you know what I mean?\"*"
+    "\n\n"
+    "**Example 3 — Calm & Authoritative Narrator**  \n"
+    "`Control Instruction`: *\"Middle-aged male voice, deep and measured, "
+    "clear articulation, steady pace, documentary-style narration.\"*  \n"
+    "`Target Text`: *\"In the vast expanse of the cosmos, every star tells a story "
+    "billions of years in the making.\"*"
 )
 
 _USAGE_INSTRUCTIONS_ZH = (
@@ -69,6 +75,4 @@ _USAGE_INSTRUCTIONS_ZH = (
 _EXAMPLES_FOOTER_ZH = (
     "---\n"
     "**💡 声音描述示例（中英文均可）：**  \n\n"
-    # TODO: add more Chinese voice description examples (e.g. narrator, elderly, child)
-    "**示例 1 — 深宫太后**"
-)
+    # TODO: add Chinese examples mirroring the EN footer above
