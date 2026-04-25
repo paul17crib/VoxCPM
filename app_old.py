@@ -29,6 +29,7 @@ class VoxCPMDemo:
 
         # TTS model (lazy init)
         self.voxcpm_model: Optional[voxcpm.VoxCPM] = None
+        # Note: changed default model dir to match my local setup
         self.default_local_model_dir = "./models/VoxCPM1.5"
 
     # ---------- Model helpers ----------
@@ -44,6 +45,7 @@ class VoxCPMDemo:
 
         repo_id = os.environ.get("HF_REPO_ID", "").strip()
         if len(repo_id) > 0:
+            # Use double underscore as separator to avoid nested dir confusion
             target_dir = os.path.join("models", repo_id.replace("/", "__"))
             if not os.path.isdir(target_dir):
                 try:
@@ -71,5 +73,5 @@ class VoxCPMDemo:
     def prompt_wav_recognition(self, prompt_wav: Optional[str]) -> str:
         if prompt_wav is None:
             return ""
-        res = self.asr_model.generate(input=prompt_wav, language="auto", use_itn=True)
-        text = res[0]["text"].split('|>')[-1
+        # use_itn=True enables inverse text normalization (e.g. "3" instead of "three")
+        res = self.asr_model.generate(input=prompt_wav, language="auto", use_itn=True
