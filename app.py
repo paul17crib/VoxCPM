@@ -56,6 +56,13 @@ _EXAMPLES_FOOTER_EN = (
     "clear articulation, steady pace, documentary-style narration.\"*  \n"
     "`Target Text`: *\"In the vast expanse of the cosmos, every star tells a story "
     "billions of years in the making.\"*"
+    # Personal note: added a 4th example for expressive storytelling use-case
+    "\n\n"
+    "**Example 4 — Warm Bedtime Storyteller**  \n"
+    "`Control Instruction`: *\"Warm, gentle adult voice, soft and unhurried, "
+    "soothing tone suitable for bedtime stories.\"*  \n"
+    "`Target Text`: *\"Once upon a time, in a forest where the fireflies never slept, "
+    "a little fox discovered a door no one else could see.\"*"
 )
 
 _USAGE_INSTRUCTIONS_ZH = (
@@ -64,15 +71,5 @@ _USAGE_INSTRUCTIONS_ZH = (
     "无需参考音频。在 **Control Instruction** 中描述目标音色特征"
     "（性别、年龄、语气、情绪、语速等），VoxCPM2 即可为你从零创造独一无二的声音。\n\n"
     "🎛️ **可控克隆（Controllable Cloning）**  \n"
-    "上传参考音频，同时可选地使用 **Control Instruction** 来指定情绪、语速、风格等表达方式，"
-    "在保留原始音色的基础上灵活控制说话风格。\n\n"
-    "🎙️ **极致克隆（Ultimate Cloning）**  \n"
-    "开启 **极致克隆模式** 并提供参考音频的文字内容（可自动识别）。"
-    "模型会将参考音频视为已说出的前文，以**音频续写**的方式完整还原参考音频中的所有声音细节。"
-    "注意：该模式与可控克隆模式互斥，将禁用Control Instruction。\n\n"
+    "上传参考音频，同时可选地使用 "
 )
-
-_EXAMPLES_FOOTER_ZH = (
-    "---\n"
-    "**💡 声音描述示例（中英文均可）：**  \n\n"
-    # TODO: add Chinese examples mirroring the EN footer above
